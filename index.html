@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/ca0b8f6937.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row text-center">
+        <h2>
+        Feeling hungry?
+        </h2>
+        <h4>Get a random meal by clicking below</h4>
+        <button class="getButton" id="get_meal">Get Meal 🍔</button>
+        
+        </div>
+        <div id="meal" class="row meal"></div>
+        <div class="ingredients-panel-container">
+            <div class="ingredients-panel">
+                <button class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h4>Choose your favorite ingredient</h4>
+                <ul>
+                    <li type="button" onclick="getIngredient(event, 'Chicken')" value="chicken">Chicken</li>
+                    <li type="button" onclick="getIngredient(event, 'Tomato')" value="tomato">Tomato</li>
+                    <li type="button" onclick="getIngredient(event, 'Banana')" value="banana">Banana</li>
+                    <li type="button" onclick="getIngredient(event, 'Beef')" value="beef">Beef</li>
+                    <li type="button" onclick="getIngredient(event, 'Caramel')" value="caramel">Caramel</li>
+                </ul>
+            </div>
+        </div>
+        <button class="floating-btn">Ingredients</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
